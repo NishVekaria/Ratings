@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Rating Feedback</title>
+    <script type="text/javascript" src="javascript.js">
+    </script>
+</head>
+<style>
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1%;
+        color: #f27c29;
+    }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+    body {
+        background-color: #141519;
+        font-family: 'Georgia Pro';
+        padding-top: 80px;
+
+    }
+
+    #feedback {
+        color: #f27c29;
+        margin-left: 85px;
+        border: 1px solid #2d353f;
+        border-radius: 25px;
+        padding: 12px;
+        background-color: #2d353f;
+    }
+
+    #feedbackAreas {
+        margin: auto;
+        width: 400px;
+        background-color: #1e252f;
+        height:fit-content;
+        text-overflow: ellipsis;
+        padding: 30px;
+        border-radius: 25px;
+    }
+
+ 
+</style>
+</head>
+<body>
+
+    <!-- Rating state start -->
+
+
+    <div id="feedbackAreas">
+        <img src="images\illustration-thank-you.svg" style="margin-left:100px;" />
+        <br />
+        <br />
+        <span id="feedback"></span>
+        <h3 style="color:mintcream; font-size:20px; text-align:center;">Thank You!</h3>
+
+        <p style="color: #8f96a0; font-size:18px;">
+
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+
+        </p>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Nish Vekaria</a>.
+        </div>
+        
+        <script>
+            let ratings = sessionStorage.getItem('ratings')
+            let feedback = document.getElementById('feedback')
+            feedback.textContent = 'You have rated us ' + ratings + ' ' + 'out of 5'
+        </script>
+</body>
+</html>

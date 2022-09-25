@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="javascript.js" type="text/javascript" />
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      .attribution {
+          font-size: 11px;
+          text-align: center;
+          margin-top: 1%;
+          color: #f27c29;
+      }
+    .attribution a { color: hsl(228, 45%, 44%); }
+      body {
+          background-color: #141519;
+          font-family: 'Georgia Pro';
+          padding-top:80px;
+          
+      }
+      #title{
+          color:white;
+          font-size:28px;
+      }
+      #ratingareas {
+          margin: auto;
+          width: 300px;
+          background-color: #1e252f;
+          height: auto;
+          text-overflow: ellipsis;
+          padding:30px;
+          border-radius:25px;
+      }
+      #submitbtn {
+          background-color: #f27c29;
+          text-align: center;
+          font-size:12px;
+          margin-top:2%;
+          display: inline-block;
+          padding:10px 130px 10px 130px;
+          color:white;
+          border:none;
+          border-radius:25px;
+
+      }
+          #submitbtn:hover {
+              background-color: white;
+              color: #f27c29;
+          }
+      .ratings {
+          border-radius: 25px;
+          border: none;
+          padding: 15px 20px 15px 20px;
+          background-color: #262f38;
+          color: #606873;
+          margin:1%;
+          font-size:16px;
+      }
+          .ratings:hover {
+              background-color: #7e8798;
+              color: white;
+          }
+      
+
+
+     
+  </style>
+</head>
+<body>
+
+    <!-- Rating state start -->
+
+
+    <div id="ratingareas">
+        <img id="star" src="images\icon-star.svg" width="15px" />
+        <h3 id="title">How did we do?</h3>
+        <p style="color: #8f96a0;">
+            Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!
+        </p>
+
+        <div>
+            <input id="one" class="ratings" type="button" value="1" />
+            <input id="two" class="ratings" type="button" value="2" />
+            <input id="three"  class="ratings" type="button" value="3" />
+            <input id="four" class="ratings" type="button" value="4" />
+            <input id="five"  class="ratings" type="button" value="5" />
+        </div>
+        <input id="submitbtn" onclick="myFunctions()"  type="SUBMIT" value="SUBMIT" />
+
+
+    </div>
+
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Nish Vekaria</a>.
+    </div>
+   <script src="javascript.js"></script>
+</body>
+
+</html>
